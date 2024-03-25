@@ -194,7 +194,7 @@ class RSIStrategy(QThread):
         print(codes)
 
         # 화면번호 9999에 종목코드들의 실시간 체결정보 수신을 요청
-        # self.kiwoom.set_real_reg("9999", codes, fids, "0")
+        self.kiwoom.set_real_reg("9999", codes, fids, "0")
 
 
     def check_sell_signal(self, code):
